@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- vim:fdn=3:
+-->
+<odoo>
+    <data>
+
+
+    <!-- Assets -->
+      <template id="assets_frontend" inherit_id="website.assets_frontend" name="Theme @aek Frontend Assets">
+        <xpath expr="." position="inside">
+           <link rel="stylesheet" href="/custom_website_12/static/src/css/bootstrap.css"/>
+           <link rel="stylesheet" href="/custom_website_12/static/src/css/custom.css"/>
+           <link rel="stylesheet" href="/custom_website_12/static/src/css/responsive.css"/>
+           <link href="/custom_website_12/static/src/js/lib/venobox/venobox.css" rel="stylesheet"/>
+           <link href="/custom_website_12/static/src/js/lib/animate/animate.min.css" rel="stylesheet"/>
+
+
+              <script type="text/javascript" src="/custom_website_12/static/src/js/lib/jquery/jquery.min.js"/>
+            <script type="text/javascript" src="/custom_website_12/static/src/js/lib/bootstrap/js/bootstrap.min.js"/>
+            <script type="text/javascript" src="/custom_website_12/static/src/js/lib/venobox/venobox.min.js"/>
+                  <script type="text/javascript" src="/custom_website_12/static/src/js/lib/parallax/parallax.js"/>
+		    	<script type="text/javascript" src="/custom_website_12/static/src/js/lib/easing/easing.min.js"/>
+                <script type="text/javascript" src="/custom_website_12/static/src/js/lib/isotope/isotope.pkgd.min.js"/>
+
+        </xpath>
+    </template>
+
+
+    <template id="my_js" inherit_id="website.assets_editor" name="My Js">
+      <xpath expr="script[last()]" position="after">
+    <script type="text/javascript" src="/custom_website_12/static/src/js/base.js"/>
+      </xpath>
+    </template>
+
+
+
+    <template id="top_bar" inherit_id="website.layout">
+
+        <xpath expr="//div[@id='wrapwrap']/header" position="before">
+           <div class="clearfix" id="topbar" data-oe-id="769" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/html[1]/body[1]/div[1]/div[1]">
+              <!--==========================
+              Top Bar
+            ============================-->
+              <div id="bar-top" class="d-none d-lg-block">
+                <div class="container clearfix">
+                  <div class="contact-info float-left">
+                      <i class="fa fa-arrow-circle-right fa-lg"></i> <a href="http://67.205.130.236:6069/web#action=473">Login </a>
+                    <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">www.maxtech-sa.com</a>
+                    <i class="fa fa-phone"></i> +966 561 494 490
+                  </div>
+                  <div class="social-links float-right">
+                    <a href="https://twitter.com/Maxtechsaudi" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/maxtechsaudi/" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="https://www.instagram.com/maxtechsaudi/"><i class="fa fa-instagram"></i></a>
+<!--                    <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>-->
+<!--                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>-->
+                  </div>
+                </div>
+              </div>
+         </div>
+
+        </xpath>
+
+    </template>
+
+
+        <!-- Banner -->
+    <template inherit_id="website.homepage" id="homepage_inherit">
+            <xpath expr="//div[@id='wrap']" position="replace">
+
+                <section class="s_text_block_image_fw oe_img_bg oe_custom_bg open-banner"
+                         style="background-image: url(/custom_website_12/static/src/img/slider/design.PNG">
+                    <div class="container">
+                        <div class="row" id="intro">
+                            <div class="intro-content">
+                                <h2 style=""
+                                    class="o_default_snippet_text banner-h2">Start <span>Improving</span> <br/> Your Business With MAXTECH!
+                                </h2>
+                                <a href="http://maxtech-sa.com/" class="btn btn-primary btn-lg mt16" style="border-radius: 0px;">Get started</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+               <!-- Start About area -->
+              <div id="about" class="about-area area-padding">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                       <div class="general-title padding-top">
+                        <h2>ABOUT US</h2>
+                        <hr class="no-padding"/>
+                       </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <!-- single-well start-->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                      <div class="well-left">
+                        <div class="single-well">
+                          <a href="#">
+                               <img alt="" class="img-responsive" src="/custom_website_12/static/src/img/slider/design2.PNG" style="background:#000" />
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- single-well end-->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                      <div class="well-middle">
+                        <div class="single-well">
+                          <a href="#">
+                              <h3 class="mt8 mb0">WELCOME TO AGENCY WEBSITE</h3>
+                          </a>
+                          <p>
+
+                              information about us
+
+     Since 2004, it has made Aqsa Technical Trading Est
+
+
+<h1>What is odoo?</h1>
+
+Odoo is a free and easy-to-use platform, one of the most effective integrated global business management systems.
+
+                          </p>
+                          <ul>
+                            <li>
+                              <i class="fa fa-check"></i> Business Gap Analysis
+                            </li>
+                            <li>
+                              <i class="fa fa-check"></i> Development  Customization
+                            </li>
+                            <li>
+                              <i class="fa fa-check"></i> Installation  Deployment Odoo ERP
+                            </li>
+                            <li>
+                              <i class="fa fa-check"></i> Support and Maintenance
+                            </li>
+                            <li>
+                              <i class="fa fa-check"></i> Make Quality Products
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End col-->
+                  </div>
+                </div>
+              </div>
+              <!-- End About area -->
+
+
+                     <!-- Start Service area -->
+                    <div id="services" class="services-area area-padding">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-12 col-sm-12 col-xs-12">
+                              <div class="general-title padding-top">
+                               <h2>WHAT WE DO?</h2>
+                              <hr class="no-padding"/>
+                             </div>
+                          </div>
+                        </div>
+                        <div class="row text-center">
+                          <div class="col-md-12 col-sm-12 col-xs-12">
+                            <!-- Start first services -->
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                              <div class="about-move">
+                                <div class="services-details">
+                                  <div class="single-services">
+                                    <a class="services-icon" href="#">
+                                      <i class="fa fa-code fa-5x"></i>
+                                      </a>
+                                      <h3 class="mt8 mb0">Consultations </h3>
+                                    <p>
+                                        Leverage our Odoo Open Source Technology expertise to improve and grow your business
+                                    </p>
+                                  </div>
+                                </div>
+                                <!-- end about-details -->
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                              <div class="about-move">
+                                <div class="services-details">
+                                  <div class="single-services">
+                                    <a class="services-icon" href="#">
+
+                                        <i class="fa fa-3x m-3 rounded-circle rounded-leaf fa-lightbulb-o"></i>
+<!--                                                              <i class="fa fa-camera-retro fa-5x"></i>-->
+                                                          </a>
+                                       <h3 class="mt8 mb0">Projects Management </h3>
+                                    <p>
+                                         We guarantee delivering projects on time and as required. You will be involved to all of your project tasks to guarantee your satisfaction
+                                    </p>
+                                  </div>
+                                </div>
+                                <!-- end about-details -->
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                              <!-- end col-md-4 -->
+                              <div class=" about-move">
+                                <div class="services-details">
+                                  <div class="single-services">
+                                    <a class="services-icon" href="#">
+                                                              <i class="fa fa-3x m-3 rounded rounded-circle fa-tasks"></i>
+                                                          </a>
+                                        <h3 class="mt8 mb0"> Sales </h3>
+                                    <p>
+
+Accelerate and highlight sales.
+Manage all your sales operations in one place
+                                    </p>
+                                  </div>
+                                </div>
+                                <!-- end about-details -->
+                              </div>
+                            </div>
+                               <!-- End end services -->
+                              <!-- Start second services -->
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                              <!-- end col-md-4 -->
+                              <div class=" about-move">
+                                <div class="services-details">
+                                  <div class="single-services">
+                                    <a class="services-icon" href="#">
+                                        <i class="fa fa-camera-retro fa-5x"></i>
+                                    </a>
+
+                                      <h3 class="mt8 mb0">Operational management</h3>
+                                    <p>
+                                        Increase work efficiency in the entire business.
+                                    </p>
+                                  </div>
+                                </div>
+                                <!-- end about-details -->
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                              <!-- end col-md-4 -->
+                              <div class=" about-move">
+                                <div class="services-details">
+                                  <div class="single-services">
+                                    <a class="services-icon" href="#">
+                                        <i class="fa fa-bar-chart fa-5x"></i>
+                                    </a>
+                                      <h3 class="mt8 mb0">Relations Contact </h3>
+                                    <p>
+                                        Build strong relations with your customers and partners
+                                    </p>
+                                  </div>
+                                </div>
+                                <!-- end about-details -->
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                              <!-- end col-md-4 -->
+                              <div class=" about-move">
+                                <div class="services-details">
+                                  <div class="single-services">
+                                    <a class="services-icon" href="#">
+                                      <i class="fa fa-laptop  fa-3x"></i>
+                                    </a>
+                                       <h3 class="mt8 mb0"> Flexible and Fully Integrated</h3>
+                                    <p>
+                                        Robust and Dynamic Web based ERP in context to your business goals.
+                                    </p>
+                                  </div>
+                                </div>
+                                <!-- end about-details -->
+                              </div>
+                            </div>
+                             <!-- End second services -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Service area -->
+
+
+
+
+        <!-- Start Wellcome Area -->
+        <div class="wellcome-area area-padding">
+          <div class="well-bg">
+            <div class="img-overly"></div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="wellcome-text">
+                    <div class="well-text text-center">
+                      <h2>ARE YOU READY TO GET STARTED ?</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed elit tortor. Quisque bibendum mauris velit, sed tincidunt massa lacinia nec
+                      </p>
+                      <div class="subs-feilds">
+                        <div class="suscribe-input">
+                          <input type="email" class="email form-control width-80" id="sus_email" placeholder="Email"/>
+                          <button type="submit" id="sus_submit" class="add-btn width-20">Subscribe</button>
+                          <div id="msg_Submit" class="h3 text-center hidden"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Wellcome Area -->
+
+
+        <!-- Start portfolio Area -->
+<!--        <div id="portfolio" class="portfolio-area area-padding fix">-->
+<!--          <div class="container">-->
+<!--            <div class="row">-->
+<!--              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">-->
+
+<!--                  <div class="general-title padding-top">-->
+<!--                  <h2>OUR WORKS</h2>-->
+<!--                  <hr class="no-padding"/>-->
+<!--                 </div>-->
+
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--              &lt;!&ndash; Start Portfolio -page &ndash;&gt;-->
+<!--              <div class="awesome-project-1 fix">-->
+<!--                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">-->
+<!--                  <div class="awesome-menu ">-->
+<!--                    <ul class="project-menu">-->
+<!--                      <li>-->
+<!--                        <a href="#" class="active" data-filter="*">All</a>-->
+<!--                      </li>-->
+<!--                      <li>-->
+<!--                        <a href="#" data-filter=".development">Development</a>-->
+<!--                      </li>-->
+<!--                      <li>-->
+<!--                        <a href="#" data-filter=".design">Design</a>-->
+<!--                      </li>-->
+<!--                      <li>-->
+<!--                        <a href="#" data-filter=".photo">Photoshop</a>-->
+<!--                      </li>-->
+<!--                    </ul>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+
+<!--              <div class="awesome-project-content">-->
+<!--                &lt;!&ndash; single-awesome-project start &ndash;&gt;-->
+<!--                <div class="col-md-4 col-sm-4 col-xs-12 design development">-->
+<!--                  <div class="single-awesome-project">-->
+<!--                    <div class="awesome-img">-->
+<!--                      <a href="#"><img src="/custom_website_12/static/src/img/portfolio/1.jpg" alt="" /></a>-->
+<!--                      <div class="add-actions text-center">-->
+<!--                        <div class="project-dec">-->
+<!--                          <a class="venobox" data-gall="myGallery" href="/custom_website_12/static/src/img/portfolio/design11.jpg">-->
+<!--                            <h4>Business City</h4>-->
+<!--                            <span>Web Development</span>-->
+<!--                          </a>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; single-awesome-project end &ndash;&gt;-->
+<!--                &lt;!&ndash; single-awesome-project start &ndash;&gt;-->
+<!--                <div class="col-md-4 col-sm-4 col-xs-12 photo">-->
+<!--                  <div class="single-awesome-project">-->
+<!--                    <div class="awesome-img">-->
+<!--                      <a href="#"><img src="/custom_website_12/static/src/img/portfolio/2.jpg" alt="" /></a>-->
+<!--                      <div class="add-actions text-center">-->
+<!--                        <div class="project-dec">-->
+<!--                          <a class="venobox" data-gall="myGallery" href="/custom_website_12/static/src/img/portfolio/design12.jpg">-->
+<!--                            <h4>Blue Sea</h4>-->
+<!--                            <span>Photosho</span>-->
+<!--                          </a>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; single-awesome-project end &ndash;&gt;-->
+<!--                &lt;!&ndash; single-awesome-project start &ndash;&gt;-->
+<!--                <div class="col-md-4 col-sm-4 col-xs-12 design">-->
+<!--                  <div class="single-awesome-project">-->
+<!--                    <div class="awesome-img">-->
+<!--                      <a href="#"><img src="/custom_website_12/static/src/img/portfolio/3.jpg" alt="" /></a>-->
+<!--                      <div class="add-actions text-center">-->
+<!--                        <div class="project-dec">-->
+<!--                          <a class="venobox" data-gall="myGallery" href="/custom_website_12/static/src/img/portfolio/design.PNG">-->
+<!--                            <h4>Beautiful Nature</h4>-->
+<!--                            <span>Web Design</span>-->
+<!--                          </a>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; single-awesome-project end &ndash;&gt;-->
+<!--                &lt;!&ndash; single-awesome-project start &ndash;&gt;-->
+<!--                <div class="col-md-4 col-sm-4 col-xs-12 photo development">-->
+<!--                  <div class="single-awesome-project">-->
+<!--                    <div class="awesome-img">-->
+<!--                      <a href="#"><img src="/custom_website_12/static/src/img/portfolio/4.jpg" alt="" /></a>-->
+<!--                      <div class="add-actions text-center">-->
+<!--                        <div class="project-dec">-->
+<!--                          <a class="venobox" data-gall="myGallery" href="/custom_website_12/static/src/img/portfolio/design14.jpg">-->
+<!--                            <h4>Creative Team</h4>-->
+<!--                            <span>Web design</span>-->
+<!--                          </a>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; single-awesome-project end &ndash;&gt;-->
+<!--                &lt;!&ndash; single-awesome-project start &ndash;&gt;-->
+<!--                <div class="col-md-4 col-sm-4 col-xs-12 development">-->
+<!--                  <div class="single-awesome-project">-->
+<!--                    <div class="awesome-img">-->
+<!--                      <a href="#"><img src="/custom_website_12/static/src/img/portfolio/5.jpg" alt="" /></a>-->
+<!--                      <div class="add-actions text-center text-center">-->
+<!--                        <div class="project-dec">-->
+<!--                          <a class="venobox" data-gall="myGallery" href="/custom_website_12/static/src/img/portfolio/design15.jpg">-->
+<!--                            <h4>Beautiful Flower</h4>-->
+<!--                            <span>Web Development</span>-->
+<!--                          </a>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; single-awesome-project end &ndash;&gt;-->
+<!--                &lt;!&ndash; single-awesome-project start &ndash;&gt;-->
+<!--                <div class="col-md-4 col-sm-4 col-xs-12 design photo">-->
+<!--                  <div class="single-awesome-project">-->
+<!--                    <div class="awesome-img">-->
+<!--                      <a href="#"><img src="/custom_website_12/static/src/img/portfolio/6.jpg" alt="" /></a>-->
+<!--                      <div class="add-actions text-center">-->
+<!--                        <div class="project-dec">-->
+<!--                          <a class="venobox" data-gall="myGallery" href="/custom_website_12/static/src/img/portfolio/design16.jpg">-->
+<!--                            <h4>Night Hill</h4>-->
+<!--                            <span>Photoshop</span>-->
+<!--                          </a>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; single-awesome-project end &ndash;&gt;-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; awesome-portfolio end &ndash;&gt;-->
+
+
+        <!-- Faq area start -->
+<!--              -->
+<!--        <div class="faq-area area-padding">-->
+<!--          <div class="container">-->
+<!--            <div class="row">-->
+<!--              <div class="col-md-12 col-sm-12 col-xs-12">-->
+<!--                  <div class="general-title padding-top">-->
+<!--                   <h2>FAQ QUESTION</h2>-->
+<!--                  <hr class="no-padding"/>-->
+<!--                 </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--              <div class="col-md-6 col-sm-6 col-xs-12">-->
+<!--                <div class="faq-details">-->
+<!--                  <div class="panel-group" id="accordion">-->
+<!--                    &lt;!&ndash; Panel Default &ndash;&gt;-->
+<!--                    <div class="panel panel-default faq-accordion">-->
+<!--                      <div class="panel-heading">-->
+<!--                        <h4 class="check-title">-->
+<!--                                                  <a data-toggle="collapse" class="active" data-parent="#accordion" href="#check1">-->
+<!--                                                      <span class="acc-icons"></span>Consectetur adipisicing elit.-->
+<!--                                                  </a>-->
+<!--                                              </h4>-->
+<!--                      </div>-->
+<!--                      <div id="check1" class="panel-collapse collapse in">-->
+<!--                        <div class="panel-body">-->
+<!--                          <p>-->
+<!--                            Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus recusandae vero-->
+<!--                          </p>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; End Panel Default &ndash;&gt;-->
+<!--                    &lt;!&ndash; Panel Default &ndash;&gt;-->
+<!--                    <div class="panel panel-default">-->
+<!--                      <div class="panel-heading">-->
+<!--                        <h4 class="check-title">-->
+<!--                                                  <a data-toggle="collapse" data-parent="#accordion" href="#check2">-->
+<!--                                                      <span class="acc-icons"></span> Dolore magnam quidem repellat.-->
+<!--                                                  </a>-->
+<!--                                              </h4>-->
+<!--                      </div>-->
+<!--                      <div id="check2" class="panel-collapse collapse">-->
+<!--                        <div class="panel-body">-->
+<!--                          <p>-->
+<!--                            Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus recusandae vero aperiam sint nulla beatae eos.-->
+<!--                          </p>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; End Panel Default &ndash;&gt;-->
+<!--                    &lt;!&ndash; Panel Default &ndash;&gt;-->
+<!--                    <div class="panel panel-default">-->
+<!--                      <div class="panel-heading">-->
+<!--                        <h4 class="check-title">-->
+<!--                                                  <a data-toggle="collapse" data-parent="#accordion" href="#check3">-->
+<!--                                                      <span class="acc-icons"></span>Redug Lefes dolor sit.-->
+<!--                                                  </a>-->
+<!--                                              </h4>-->
+<!--                      </div>-->
+<!--                      <div id="check3" class="panel-collapse collapse ">-->
+<!--                        <div class="panel-body">-->
+<!--                          <p>-->
+<!--                            Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus recusandae vero aperiam sint nulla beatae eos.-->
+<!--                          </p>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; End Panel Default &ndash;&gt;-->
+<!--                    &lt;!&ndash; Panel Default &ndash;&gt;-->
+<!--                    <div class="panel panel-default">-->
+<!--                      <div class="panel-heading">-->
+<!--                        <h4 class="check-title">-->
+<!--                                                  <a data-toggle="collapse" data-parent="#accordion" href="#check4">-->
+<!--                                                      <span class="acc-icons"></span>Maiores alias accusamus-->
+<!--                                                  </a>-->
+<!--                                              </h4>-->
+<!--                      </div>-->
+<!--                      <div id="check4" class="panel-collapse collapse">-->
+<!--                        <div class="panel-body">-->
+<!--                          <p>-->
+<!--                            Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus recusandae vero aperiam sint nulla beatae eos.-->
+<!--                          </p>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; End Panel Default &ndash;&gt;-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="col-md-6 col-sm-6 col-xs-12">-->
+<!--                <div class="tab-menu">-->
+<!--                  &lt;!&ndash; Nav tabs &ndash;&gt;-->
+<!--                  <ul class="nav nav-tabs" role="tablist">-->
+<!--                    <li class="active">-->
+<!--                      <a href="#p-view-1" role="tab" data-toggle="tab">Project</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                      <a href="#p-view-2" role="tab" data-toggle="tab">Planning</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                      <a href="#p-view-3" role="tab" data-toggle="tab">Success</a>-->
+<!--                    </li>-->
+<!--                  </ul>-->
+<!--                </div>-->
+<!--                <div class="tab-content">-->
+<!--                  <div class="tab-pane active" id="p-view-1">-->
+<!--                    <div class="tab-inner">-->
+<!--                      <div class="event-content head-team">-->
+<!--                        <h4>Project</h4>-->
+<!--                        <p>-->
+<!--                          Redug Lares dolor sit amet, consectetur adipisicing elit. Animi vero excepturi magnam ducimus adipisci voluptas, praesentium maxime necessitatibus in dolor dolores unde ab, libero quo. Aut, laborum sequi.-->
+<!--                        </p>-->
+<!--                        <p>-->
+<!--                          voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praesentium architecto ducimus, doloribus fuga itaque omnis placeat.-->
+<!--                        </p>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="tab-pane" id="p-view-2">-->
+<!--                    <div class="tab-inner">-->
+<!--                      <div class="event-content head-team">-->
+<!--                        <h4>Planning</h4>-->
+<!--                        <p>-->
+<!--                          voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praesentium architecto ducimus, doloribus fuga itaque omnis.-->
+<!--                        </p>-->
+<!--                        <p>-->
+<!--                          Redug Lares dolor sit amet, consectetur adipisicing elit. Animi vero excepturi magnam ducimus adipisci voluptas, praesentium maxime necessitatibus in dolor dolores unde ab, libero quo. Aut.-->
+<!--                        </p>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="tab-pane" id="p-view-3">-->
+<!--                    <div class="tab-inner">-->
+<!--                      <div class="event-content head-team">-->
+<!--                        <h4>Success</h4>-->
+<!--                        <p>-->
+<!--                          voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praesentium architecto ducimus, doloribus fuga itaque omnis placeat.-->
+<!--                        </p>-->
+<!--                        <p>-->
+<!--                          voluptas, praesentium maxime cum fugiat,magnam ducimus adipisci voluptas, praesentium architecto ducimus, doloribus fuga itaque omnis.-->
+<!--                        </p>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; end Row &ndash;&gt;-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; End Faq Area &ndash;&gt;-->
+
+
+         <!-- start pricing area -->
+        <div id="pricing" class="pricing-area area-padding">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="general-title padding-top">
+                 <h2>PRICING TABLE</h2>
+                  <hr class="no-padding"/>
+                 </div>
+
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="pri_table_list">
+                  <h3>basic <br/> <span>$80 / month</span></h3>
+                  <ol>
+                    <li class="check">Online system</li>
+                    <li class="check cross">Full access</li>
+                    <li class="check">Free apps</li>
+                    <li class="check">Multiple slider</li>
+                    <li class="check cross">Free domin</li>
+                    <li class="check cross">Support unlimited</li>
+                    <li class="check">Payment offline  online</li>
+                    <li class="check cross">Cash back</li>
+                  </ol>
+                  <button>sign up now</button>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="pri_table_list active">
+                  <span class="saleon">top sale</span>
+                  <h3>standard <br/> <span>$110 / month</span></h3>
+                  <ol>
+                    <li class="check">Online system</li>
+                    <li class="check">Full access</li>
+                    <li class="check">Free apps</li>
+                    <li class="check">Multiple slider</li>
+                    <li class="check cross">Free domin</li>
+                    <li class="check">Support unlimited</li>
+                    <li class="check">Payment online</li>
+                    <li class="check cross">Cash back</li>
+                  </ol>
+                  <button>sign up now</button>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="pri_table_list">
+                  <h3>premium <br/> <span>$150 / month</span></h3>
+                  <ol>
+                    <li class="check">Online system</li>
+                    <li class="check">Full access</li>
+                    <li class="check">Free apps</li>
+                    <li class="check">Multiple slider</li>
+                    <li class="check">Free domin</li>
+                    <li class="check">Support unlimited</li>
+                    <li class="check">Payment online</li>
+                    <li class="check">Cash back</li>
+                  </ol>
+                  <button>sign up now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End pricing table area -->
+
+        <!-- Start Blog Area -->
+        <div id="blog" class="blog-area">
+          <div class="blog-inner area-padding">
+            <div class="blog-overly"></div>
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+
+                    <div class="general-title padding-top">
+                 <h2>LATEST BLOG</h2>
+                  <hr class="no-padding"/>
+                 </div>
+                </div>
+
+              </div>
+              <div class="row">
+                <!-- Start Left Blog -->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="single-blog">
+                    <div class="single-blog-img">
+                      <a href="#">
+                                              <img src="/custom_website_12/static/src/img/blog/blog4.PNG" alt="" style=" max-width: 100%; height: auto;"/>
+                                          </a>
+                    </div>
+                    <div class="blog-meta">
+                      <span class="comments-type">
+                                              <i class="fa fa-comment-o"></i>
+                                              <a href="#">13 comments</a>
+                                          </span>
+                      <span class="date-type">
+                                              <i class="fa fa-calendar"></i>2020-06-05 / 09:10:16
+                                          </span>
+                    </div>
+                    <div class="blog-text">
+
+                                              <h3>Point of sale </h3>
+
+                      <p>
+                          Odoo POS, is the module specialized on the Point of Sale (POS), which can manage, through a modern interface, daily sales, warehouse stock, inventories, prices, ticket printing and generate sales reports in a simple and professional way.
+                      </p>
+                    </div>
+                    <span>
+                                          <a href="http://maxtech-sa.com/services/%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d8%ac-%d9%86%d9%82%d8%a7%d8%b7-%d8%a7%d9%84%d8%a8%d9%8a%d8%b9/" class="ready-btn">Read more</a>
+                                      </span>
+                  </div>
+                  <!-- Start single blog -->
+                </div>
+                <!-- End Left Blog-->
+                <!-- Start Left Blog -->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="single-blog">
+                    <div class="single-blog-img">
+                      <a href="#">
+                                              <img src="/custom_website_12/static/src/img/blog/blog5.PNG" alt="" style=" max-width: 100%; height: auto;"/>
+                                          </a>
+                    </div>
+                    <div class="blog-meta">
+                      <span class="comments-type">
+                                              <i class="fa fa-comment-o"></i>
+                                              <a href="#">130 comments</a>
+                                          </span>
+                      <span class="date-type">
+                                              <i class="fa fa-calendar"></i>2016-03-05 / 09:10:16
+                                          </span>
+                    </div>
+                    <div class="blog-text">
+                      <h4>
+                                             Human Resources
+                                          </h4>
+                      <p>
+
+Create employee profiles <br/> Manage contracts
+
+Manage timesheets <br/> Handle attendance
+
+Manage leaves <br/> Dashboards
+                      </p>
+                    </div>
+                    <span>
+                                          <a href="http://maxtech-sa.com/services/%d8%a7%d9%86%d8%b8%d9%85%d8%a9-%d8%a7%d9%84%d8%ad%d8%b6%d9%88%d8%b1-%d9%88%d8%a7%d9%84%d8%a7%d9%86%d8%b5%d8%b1%d8%a7%d9%81-2/" class="ready-btn">Read more</a>
+                                      </span>
+                  </div>
+                  <!-- Start single blog -->
+                </div>
+                <!-- End Left Blog-->
+                <!-- Start Right Blog-->
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="single-blog">
+                    <div class="single-blog-img">
+                      <a href="#">
+                                              <img src="/custom_website_12/static/src/img/blog/blog6.PNG" alt="" style=" max-width: 100%; height: auto;"/>
+                                          </a>
+                    </div>
+                    <div class="blog-meta">
+                      <span class="comments-type">
+                                              <i class="fa fa-comment-o"></i>
+                                              <a href="#">10 comments</a>
+                                          </span>
+                      <span class="date-type">
+                                              <i class="fa fa-calendar"></i>2020-06-05 / 09:10:16
+                                          </span>
+                    </div>
+                    <div class="blog-text">
+                      <h4> Accounting </h4>
+                      <p>
+automatically calculates your current year earnings in real time so no year-end journal or rollover is required. This is calculated by reporting the profit and loss balance to your balance sheet report automatically.                      </p>
+                    </div>
+                    <span>
+                                          <a href="http://maxtech-sa.com/services/%d8%a7%d9%86%d8%b8%d9%85%d8%a9-%d8%a7%d9%84%d8%ad%d8%b6%d9%88%d8%b1-%d9%88%d8%a7%d9%84%d8%a7%d9%86%d8%b5%d8%b1%d8%a7%d9%81-2/" class="ready-btn">Read more</a>
+                                      </span>
+                  </div>
+                </div>
+                <!-- End Right Blog-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Blog -->
+          <br></br>
+
+          </xpath>
+    </template>
+
+
+    <!--footer section  -->
+    <template id="footer_custom" inherit_id="website.layout" customize_show="True" name="Footer">
+
+      <xpath expr="//div[@id='footer']" position="replace" >
+
+         <div class="oe_structure" data-oe-id="776" data-oe-source-id="769" data-oe-xpath="/data/xpath/div" data-oe-model="ir.ui.view" data-oe-field="arch">
+                  <footer id="footer-style-1">
+                     <div class="container">
+
+                          <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                      <div class="widget">
+                                              <br/>
+                                              <p> information about us
+
+     Since 2004, it has made Aqsa Technical Trading Est
+     Its mark as a well-established institution in the provision of security systems.
+     Under the competent leadership and technical team, the Foundation has achieved
+     Many levels of success and thus have become institutions
+     Competition in this field
+                                              </p>
+
+                                          </div>
+                            </div>
+                            <!-- end single footer -->
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+
+                                 <div class="widget">
+                                              <div class="title">
+                                                  <h3>information</h3>
+                                              </div>
+                                              <div class="newsletter_widget">
+<!--                                              <p>-->
+<!--                                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.-->
+<!--                                               </p>-->
+                                              <div class="footer-contacts">
+                                                    <p><span><i class="fa fa-phone"></i> </span> +966 561 494 490</p>
+                                                    <p><span><i class="fa fa-envelope"></i> </span> Abdullah@maxtech-sa.com</p>
+                                                    <p><span> <i class="fa fa-map-marker"></i> </span> Prince Nasir Ibn Abdulaziz 7544 Riyadh, Saudi Arabia </p>
+                                             </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <!-- end single footer -->
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                              <div class="widget">
+                                              <div class="title">
+                                                  <h3>Newsletter</h3>
+                                              </div>
+                                              <div class="newsletter_widget">
+<!--                                                  <p>Subscribe to our newsletter to receive news, updates, free stuff and new releases by email. We don't do spam..</p>-->
+                                                  <form action="#" method="post" id="newsletter-validate-detail" class="newsletter_form">
+<!--                                                      <input name="email" id="newsletter" class="form-control required-entry validate-email" placeholder="Enter your email address" type="text" />-->
+
+<!--                                                      <div class="form-group row">-->
+<!--                                                        <div class="offset-lg-3 offset-md-4 col-md-8 col-lg-7">-->
+<!--                                                            <a href="http://localhost:7069/contactus" role="button" class="btn btn-primary btn-lg o_website_form_send">Send</a>-->
+<!--                                                            <span id="o_website_form_result"></span>-->
+<!--                                                        </div>-->
+<!--                                                      </div>-->
+
+                                                      <a href="http://localhost:7069/contactus" role="button" title="Subscribe" class="btn btn-primary btn-lg o_website_form_send">Subscribe</a>
+                                                      </form>
+                                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                  </footer>
+              </div>
+         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+      </xpath>
+
+    </template>
+
+    <template id="website.layout_footer_copyright" inherit_id="website.layout" name="Footer Copyright">
+        <xpath expr="//footer" position="inside">
+              <section id="copyrights" data-oe-id="770" data-oe-source-id="769" data-oe-xpath="/data/xpath/section" data-oe-model="ir.ui.view" data-oe-field="arch">
+              <div class="footer-area-bottom">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="copyright text-center">
+                          <p>
+                             Copyright <a href="http://maxtech-sa.com/"> <strong>@Maxtech</strong> </a>. All Rights Reserved
+                          </p>
+                        </div>
+                        <div class="credits">
+                          Designed by <a href="https://www.linkedin.com/in/abdallah-saleh-a8498311a/">@Abdullah Saleh</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+        </xpath>
+    </template>
+
+</data>
+</odoo>
